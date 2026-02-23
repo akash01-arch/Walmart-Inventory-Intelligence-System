@@ -1,0 +1,37 @@
+{
+    "created_at": "2026-02-23 16:45",
+    "demand_model": "Gradient Boosting",
+    "demand_r2": 0.9895,
+    "demand_rmse": 12.33,
+    "demand_mape": 2.41,
+    "classifier_auc": 0.52,
+    "classifier_accuracy": 0.528,
+    "features_used": [
+        "year",
+        "month",
+        "week",
+        "day_of_week",
+        "quarter",
+        "is_weekend",
+        "category_enc",
+        "store_location_enc",
+        "product_name_enc",
+        "promotion_type_enc",
+        "price_tier_enc",
+        "unit_price",
+        "inventory_level",
+        "reorder_point",
+        "stock_health",
+        "days_of_stock",
+        "is_promotion",
+        "forecasted_demand",
+        "forecast_error"
+    ],
+    "training_records": 4000,
+    "best_params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.7,
+        "max_depth": 10
+    }
+}

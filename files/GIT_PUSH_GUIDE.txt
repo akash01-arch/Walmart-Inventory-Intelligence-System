@@ -1,0 +1,201 @@
+========================================================
+  STEP-BY-STEP GUIDE: PUSH NEW FILES TO EXISTING REPO
+  Repo: github.com/akash01-arch/Walmart-Inventory-Analysis
+========================================================
+
+WHAT YOU HAVE IN YOUR REPO RIGHT NOW:
+  - Walmart-Inventory-Analysis.ipynb    (old version)
+  - Walmart-Inventory-Dataset.csv
+  - Walmart-Inventory-Analysis-summary.pdf
+  - README.md  (basic old one)
+
+WHAT WE ARE ADDING:
+  - Walmart_MNC_Level_Analysis.ipynb    (new ML version)
+  - README.md                           (replace old one)
+  - requirements.txt                    (new)
+  - .gitignore                          (new)
+
+========================================================
+STEP 1: OPEN TERMINAL / COMMAND PROMPT
+========================================================
+
+Windows → Search "cmd" or "PowerShell"
+Mac/Linux → Open Terminal
+
+
+========================================================
+STEP 2: CLONE YOUR EXISTING REPO
+========================================================
+
+Run this command:
+
+  git clone https://github.com/akash01-arch/Walmart-Inventory-Analysis.git
+
+Then go inside:
+
+  cd Walmart-Inventory-Analysis
+
+
+========================================================
+STEP 3: COPY NEW FILES INTO THE FOLDER
+========================================================
+
+Copy these 4 files INTO the Walmart-Inventory-Analysis folder:
+
+  ✅ Walmart_MNC_Level_Analysis.ipynb   ← new notebook
+  ✅ README.md                          ← replace the old one
+  ✅ requirements.txt                   ← new file
+  ✅ .gitignore                         ← new file
+
+NOTE: When copying README.md it will ask to replace — say YES.
+
+
+========================================================
+STEP 4: CHECK WHAT CHANGED
+========================================================
+
+  git status
+
+You should see something like:
+  modified:   README.md
+  new file:   Walmart_MNC_Level_Analysis.ipynb
+  new file:   requirements.txt
+  new file:   .gitignore
+
+
+========================================================
+STEP 5: STAGE ALL FILES
+========================================================
+
+  git add .
+
+(The dot means "add everything")
+
+
+========================================================
+STEP 6: COMMIT WITH A PROFESSIONAL MESSAGE
+========================================================
+
+  git commit -m "feat: upgrade to MNC-level ML system (v2)
+
+- Add Walmart_MNC_Level_Analysis.ipynb with full ML pipeline
+- TimeSeriesSplit CV + RandomizedSearchCV hyperparameter tuning
+- Demand forecasting: Random Forest + Gradient Boosting
+- Stockout risk classifier with ROC-AUC evaluation
+- 30-day revenue forecast with confidence bands
+- EOQ + Safety Stock inventory optimization
+- Model persistence with joblib (production ready)
+- Business impact quantification in dollars
+- Add requirements.txt for reproducibility
+- Add .gitignore for clean repo
+- Upgrade README with full project documentation"
+
+
+========================================================
+STEP 7: PUSH TO GITHUB
+========================================================
+
+  git push origin main
+
+It may ask for your GitHub username and password.
+If it asks for password → use your GitHub Personal Access Token
+(not your account password)
+
+How to get token:
+  GitHub → Settings → Developer Settings
+  → Personal Access Tokens → Tokens (classic)
+  → Generate new token → check "repo" → copy token
+
+
+========================================================
+STEP 8: VERIFY ON GITHUB
+========================================================
+
+Go to: https://github.com/akash01-arch/Walmart-Inventory-Analysis
+
+You should now see all new files in the repo.
+
+
+========================================================
+STEP 9: UPDATE REPO SETTINGS ON GITHUB
+========================================================
+
+1. Click the ⚙️ gear icon next to "About" (top right of repo)
+
+2. Change Description to:
+   "End-to-end ML inventory system — demand forecasting,
+   stockout risk & revenue optimization | scikit-learn · Python"
+
+3. Add Website (optional): your LinkedIn URL
+
+4. Add Topics (click the gear → Topics box):
+   machine-learning
+   python
+   data-science
+   inventory-management
+   demand-forecasting
+   random-forest
+   scikit-learn
+   retail-analytics
+   time-series
+   supply-chain
+   jupyter-notebook
+   business-analytics
+
+5. Click Save Changes
+
+
+========================================================
+STEP 10: PIN REPO ON YOUR PROFILE
+========================================================
+
+Go to your GitHub profile:
+  https://github.com/akash01-arch
+
+Click "Customize your pins"
+Select "Walmart-Inventory-Analysis"
+Click Save
+
+
+========================================================
+AFTER RUNNING THE NOTEBOOK — FINAL STEP
+========================================================
+
+Run the MNC notebook completely first.
+Note down your actual scores from the output:
+  - Demand Model R² Score
+  - Demand Model MAPE
+  - Stockout Classifier AUC
+  - Business Impact total dollar value
+
+Then open README.md and replace:
+  "Run notebook to see" → with actual numbers
+
+Then push again:
+  git add README.md
+  git commit -m "docs: add actual model performance metrics"
+  git push origin main
+
+========================================================
+COMMON ERRORS & FIXES
+========================================================
+
+ERROR: "fatal: not a git repository"
+FIX: Make sure you cd into the cloned folder first
+     cd Walmart-Inventory-Analysis
+
+ERROR: "rejected — non-fast-forward"
+FIX: git pull origin main --rebase
+     then git push origin main
+
+ERROR: "Authentication failed"
+FIX: Use Personal Access Token as password
+     (GitHub no longer accepts account passwords)
+
+ERROR: "nothing to commit"
+FIX: Make sure you copied files INTO the folder
+     then run git add . again
+
+========================================================
+DONE! Your repo is now MNC-level professional.
+========================================================
