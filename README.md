@@ -44,4 +44,5 @@ Enhance models using XGBoost or LightGBM for better accuracy.
 
 Integrate experiment tracking using MLflow.
 
-Author Akash More
+
+Author - Akash More
