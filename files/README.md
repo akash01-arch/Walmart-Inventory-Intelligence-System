@@ -52,7 +52,7 @@ Walmart-Inventory-Analysis/
 
 ---
 
-## 📊 Version 1 — EDA & Business Insights
+## 📊 Version 1 — EDA & Business Insights 
 > `Walmart-Inventory-Analysis.ipynb`
 
 A comprehensive exploratory analysis answering 22 real business questions:
